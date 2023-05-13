@@ -1,15 +1,15 @@
 {
-  "name": "Blackjack",
-  "dockerComposeFile": [
-    "../docker-compose.yml"
+  "name": "Blackjack", // 名前はなんでもOK
+  "dockerComposeFile": [ 
+    "../docker-compose.yml" // docker-compose.ymlのパスを指定
   ],
-  "service": "app",
-  "workspaceFolder": "/var/www/html",
+  "service": "app", // Dockerコンテナを指定
+  "workspaceFolder": "/var/www/html", // appコンテナのvolumsを指定
   "forwardPorts": [
-    9003
+    9003 // Xdebugは9003番ポートがデフォルト
   ],
-  "extensions": [
-    "xdebug.php-debug",
+  "extensions": [ // Remote Development で使う拡張機能
+    "xdebug.php-debug", //Xdebug の拡張機能
     "bmewburn.vscode-intelephense-client",
     "oderwat.indent-rainbow",
     "streetsidesoftware.code-spell-checker"

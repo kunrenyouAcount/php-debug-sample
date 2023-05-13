@@ -16,4 +16,5 @@ ENV COMPOSER_ALLOW_SUPERUSER 1
 # ファイルのコピー
 COPY ./src /var/www/html
 COPY ./docker/app/php.ini /usr/local/etc/php/php.ini
+#PHP を実行した時に、 xdebug.ini が読み込まれて、設定が反映されます。
 COPY ./docker/app/xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini

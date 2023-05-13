@@ -1,11 +1,11 @@
 {
-  "version": "0.2.0",
-  "configurations": [
+  "version": "0.2.0", // バージョン指定
+  "configurations": [ // 設定内容
     {
       "type": "php",
       "request": "launch",
-      "name": "Listen for Xdebug",
-      "port": 9003,
+      "name": "Listen for Xdebug", // わかりやすければ、なんでもOK
+      "port": 9003, // Xdebug のポート番号
     }
   ]
 }
